@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Football Legends</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PLAYER SELECTION
+    ========================== -->
+
+    <div id="selectionScreen" class="player-selection">
+
+        <div class="selection-bg-number">10</div>
+
+        <div class="selection-content">
+
+            <div class="selection-top">
+                <span class="small-title">
+                    <i class="fa-solid fa-futbol"></i>
+                    THE ULTIMATE FOOTBALL EXPERIENCE
+                </span>
+
+                <h1>
+                    FOOTBALL
+                    <span>LEGENDS</span>
+                </h1>
+
+                <p>
+                    Enter the universe of the greatest football icons
+                    the world has ever seen.
+                </p>
+            </div>
+
+            <div class="players-selection">
+
+                <!-- SALAH -->
+
+                <div class="player-option option-salah"
+                    onclick="selectPlayer('salah')">
+
+                    <div class="card-number">11</div>
+
+                    <div class="player-option-image">
+                        <img src="https://i.pinimg.com/1200x/7e/e1/c4/7ee1c45ed069f1d0501ab26dc88c9ec5.jpg" alt="Mohamed Salah">
+                    </div>
+
+                    <div class="player-option-content">
+
+                        <span>THE EGYPTIAN KING</span>
+
+                        <h2>MOHAMED</h2>
+
+                        <h3>SALAH</h3>
+
+                        <button>
+                            ENTER UNIVERSE
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="card-glow"></div>
+
+                </div>
+
+
+                <!-- MESSI -->
+
+                <div class="player-option option-messi"
+                    onclick="selectPlayer('messi')">
+
+                    <div class="card-number">10</div>
+
+                    <div class="player-option-image">
+                        <img src="https://i.pinimg.com/736x/29/bb/15/29bb156066b7af36120e109c8ae82e90.jpg" alt="Lionel Messi">
+                    </div>
+
+                    <div class="player-option-content">
+
+                        <span>THE MAGICIAN</span>
+
+                        <h2>LIONEL</h2>
+
+                        <h3>MESSI</h3>
+
+                        <button>
+                            ENTER UNIVERSE
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="card-glow"></div>
+
+                </div>
+
+
+                <!-- RONALDO -->
+
+                <div class="player-option option-ronaldo"
+                    onclick="selectPlayer('ronaldo')">
+
+                    <div class="card-number">7</div>
+
+                    <div class="player-option-image">
+                        <img src="https://i.pinimg.com/736x/c4/d2/3f/c4d23f6ce7613bf7b9f9f0c7106815bd.jpg" alt="Cristiano Ronaldo">
+                    </div>
+
+                    <div class="player-option-content">
+
+                        <span>THE MACHINE</span>
+
+                        <h2>CRISTIANO</h2>
+
+                        <h3>RONALDO</h3>
+
+                        <button>
+                            ENTER UNIVERSE
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="card-glow"></div>
+
+                </div>
+
+            </div>
+
+            <div class="selection-footer">
+                <span>CHOOSE YOUR LEGEND</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <div id="mainWebsite" class="hidden">
+
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+
+            <div class="top-bar-info">
+
+                <span>VIEWING LEGEND</span>
+
+                <strong id="topPlayerName">
+                    MOHAMED SALAH
+                </strong>
+
+            </div>
+
+            <button onclick="backToSelection()" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                CHANGE LEGEND
+
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             SALAH PAGE
+        ========================== -->
+
+        <div id="salahLayout" class="player-layout hidden">
+
+            <main class="salah-custom-page">
+
+                <!-- HERO -->
+
+                <section class="salah-top-banner">
+
+                    <div class="salah-banner-content">
+
+                        <span class="salah-tag">
+                        </span>
+
+                        <h1>
+                            MOHAMED
+                            <span>SALAH</span>
+                        </h1>
+
+            
+                    </div>
+
+                     <div class="salah-banner-img">
+
+
+                        <img id="salahHeroImg"
+                            src="images/salah.jpg"
+                            alt="Mohamed Salah">
+
+                    </div>
+
+                </section>
+
+
+                <!-- STATS -->
+
+<section class="salah-stats-strip">
+
+    <div class="salah-stat-item">
+        <strong id="salahGoals">400+</strong>
+        <span>CAREER GOALS</span>
+    </div>
+
+    <div class="salah-stat-item">
+        <strong id="salahTrophies">35</strong>
+        <span>TROPHIES</span>
+    </div>
+
+    <div class="salah-stat-item">
+        <strong id="salahAwards">25</strong>
+        <span>INDIVIDUAL AWARDS</span>
+    </div>
+
+    <div class="salah-stat-item">
+        <strong id="salahFans">100M+</strong>
+        <span>GLOBAL FANS</span>
+    </div>
+
+</section>
+                </section>
+
+
+                <!-- BIO -->
+
+                <section class="salah-about-grid">
+
+                    <div class="salah-about-info">
+
+                        <span class="sub-title">
+                            — THE STORY
+                        </span>
+
+                        <h2>
+                            The Pride of Egypt &
+                            <span>Anfield</span>
+                        </h2>
+
+                        <p id="salahAboutText">
+                            Mohamed Salah Ghaly has shattered records
+                            across Europe. Known for his clinical finishing,
+                            dribbling and incredible consistency.
+                        </p>
+
+                        <div class="salah-mini-meta">
+
+                            <div>
+                                <span>NATIONALITY</span>
+                                <strong>EGYPT</strong>
+                            </div>
+
+                            <div>
+                                <span>POSITION</span>
+                                <strong>RIGHT WINGER</strong>
+                            </div>
+
+                            <div>
+                                <span>CLUB</span>
+                                <strong>LIVERPOOL FC</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="salah-card-img-box">
+
+                        <img id="salahAboutImg"
+                            src="images/salah.jpg"
+                            alt="Salah">
+
+                    </div>
+
+                </section>
+
+                <!-- FEATURED STORY VIDEO -->
+
+<section class="featured-story-video">
+
+    <div class="section-heading">
+
+        <span>THE PRIDE OF EGYPT & ANFIELD</span>
+
+        <h2>
+            THE STORY
+            <strong>BEHIND THE KING</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="story-video-wrapper">
+
+        <video
+            src="videos/part26.mp4"
+            autoplay
+            muted
+            loop
+            playsinline>
+        </video>
+
+    </div>
+
+
+    <div class="story-video-text">
+
+        <span>FROM NAGRIG TO ANFIELD</span>
+
+        <h3>
+            A JOURNEY THAT
+            <strong>INSPIRED MILLIONS</strong>
+        </h3>
+
+        <p>
+            From the streets of Nagrig to the heart of Anfield,
+            Mohamed Salah's journey is more than a football story.
+            It is a story of ambition, sacrifice, and believing that
+            no dream is too big.
+        </p>
+
+    </div>
+
+</section>
+
+
+                <!-- CAREER TIMELINE -->
+
+                <section id="salahJourney"
+                    class="legend-timeline salah-section">
+
+                    <div class="section-heading">
+
+                        <span>THE JOURNEY</span>
+
+                        <h2>
+                            FROM NAGRIG TO
+                            <strong>ANFIELD</strong>
+                        </h2>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-year">
+                                2010
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>THE BEGINNING</h3>
+
+                                <p>
+                                    A young Egyptian talent begins his
+                                    professional football journey.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-year">
+                                2014
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>EUROPEAN BREAKTHROUGH</h3>
+
+                                <p>
+                                    Salah takes his talent to European football
+                                    and begins his rise.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-year">
+                                2017
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>THE RED ARRIVAL</h3>
+
+                                <p>
+                                    Mohamed Salah joins Liverpool and changes
+                                    the history of the club.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-year">
+                                2019
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>EUROPEAN GLORY</h3>
+
+                                <p>
+                                    Liverpool lift the UEFA Champions League
+                                    trophy.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SKILLS -->
+
+                <section class="skills-section salah-section">
+
+                    <div class="section-heading">
+
+                        <span>THE WEAPON</span>
+
+                        <h2>
+                            BUILT FOR
+                            <strong>GREATNESS</strong>
+                        </h2>
+
+                    </div>
+
+                    <div class="skills-grid">
+
+                        <div class="skill">
+
+                            <div class="skill-top">
+                                <span>PACE</span>
+                                <strong>96%</strong>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:96%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div class="skill-top">
+                                <span>FINISHING</span>
+                                <strong>94%</strong>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:94%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div class="skill-top">
+                                <span>DRIBBLING</span>
+                                <strong>93%</strong>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:93%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div class="skill-top">
+                                <span>VISION</span>
+                                <strong>88%</strong>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:88%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- FIFA CARDS SECTION -->
+
+<section class="fifa-cards-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="fifa-info">
+
+        <span class="fifa-label">THE EGYPTIAN KING IN FIFA</span>
+
+        <h2>
+            SALAH
+            <strong>IN FIFA</strong>
+        </h2>
+
+        <p>
+            From his explosive pace to his clinical finishing,
+            Mohamed Salah has become one of the most iconic players
+            in FIFA and EA SPORTS FC.
+        </p>
+
+        <p>
+            Every edition brings a new version of the Egyptian King,
+            reflecting his evolution, his performances, and his status
+            as one of the most dangerous attackers in football.
+        </p>
+
+
+        <div class="fifa-stats">
+
+            <div class="fifa-stat">
+
+                <strong>90+</strong>
+
+                <span>PACE</span>
+
+            </div>
+
+
+            <div class="fifa-stat">
+
+                <strong>90+</strong>
+
+                <span>DRIBBLING</span>
+
+            </div>
+
+
+            <div class="fifa-stat">
+
+                <strong>90+</strong>
+
+                <span>SHOOTING</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FIFA CARDS -->
+
+    <div class="fifa-cards-grid">
+
+        <div class="fifa-card">
+
+            <img
+                src="images/card1.jfif"
+                alt="Mohamed Salah FIFA Card">
+
+            <div class="fifa-card-number">01</div>
+
+        </div>
+
+
+        <div class="fifa-card">
+
+            <img
+                src="images/card2.jfif"
+                alt="Mohamed Salah FIFA Card">
+
+            <div class="fifa-card-number">02</div>
+
+        </div>
+
+
+        <div class="fifa-card">
+
+            <img
+                src="images/caed3.jfif"
+                alt="Mohamed Salah FIFA Card">
+
+            <div class="fifa-card-number">03</div>
+
+        </div>
+
+
+        <div class="fifa-card">
+
+            <img
+                src="images/card4.jfif"
+                alt="Mohamed Salah FIFA Card">
+
+            <div class="fifa-card-number">04</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VIDEO + INFO SECTION -->
+
+<section class="video-info-section">
+
+    <!-- VIDEO LEFT -->
+
+    <div class="video-info-media">
+
+        <video
+            src="videos/ssstik.io_@lrzz.cc_1768682820410.mp4"
+            autoplay
+            muted
+            loop
+            playsinline>
+        </video>
+
+    </div>
+
+
+    <!-- TEXT RIGHT -->
+
+    <div class="video-info-content">
+
+        <span>THE MOMENT</span>
+
+        <h2>
+            MORE THAN
+            <strong>FOOTBALL</strong>
+        </h2>
+
+        <p>
+            Mohamed Salah's journey is built on more than goals
+            and trophies. Every moment represents years of hard work,
+            sacrifice, and an endless desire to become better.
+        </p>
+
+        <p>
+            From Egypt to Anfield, his story continues to inspire
+            millions around the world.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SALAH INTERVIEW -->
+
+<section class="salah-interview-section">
+
+    <div class="interview-heading">
+
+        <span>THE EGYPTIAN KING SPEAKS</span>
+
+        <h2>
+            SALAH
+            <strong>INTERVIEW</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="interview-content">
+
+        <!-- LEFT: TEXT -->
+
+        <div class="interview-text">
+
+            <span class="interview-quote">“</span>
+
+            <h3>
+                I ALWAYS
+                <strong>BELIEVED</strong>
+            </h3>
+
+            <p>
+                Every journey starts with a dream. From a small village
+                in Egypt to the biggest stages in world football,
+                Mohamed Salah has always believed in working hard,
+                staying focused, and never giving up.
+            </p>
+
+            <p>
+                His story is a reminder that talent can open the door,
+                but dedication, sacrifice, and belief are what keep
+                you moving forward.
+            </p>
+
+            <div class="interview-line"></div>
+
+            <span class="interview-signature">
+                MOHAMED SALAH
+            </span>
+
+        </div>
+
+
+        <!-- RIGHT: IMAGE -->
+
+        <div class="interview-image">
+
+            <img
+                src="images/REMAKE.jpg"
+                alt="Mohamed Salah Interview">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     VIDEO + TEXT SECTION
+========================== -->
+
+<section class="video-text-section">
+
+    <!-- TEXT ON THE LEFT -->
+
+    <div class="video-text-content">
+
+        <span>THE EGYPTIAN KING</span>
+
+        <h2>
+            MORE THAN
+            <strong>FOOTBALL</strong>
+        </h2>
+
+        <p>
+            Mohamed Salah's journey is more than goals and trophies.
+            It is a story of ambition, sacrifice and believing in the dream.
+        </p>
+
+        <p>
+            From the streets of Nagrig to the heart of Anfield,
+            every step created a legend.
+        </p>
+
+
+    </div>
+
+
+    <!-- VIDEO ON THE RIGHT -->
+
+    <div class="video-text-media">
+
+        <video
+            src="videos/ssstik.io_@warun.edits_1776903526624.mp4"
+            autoplay
+            muted
+            loop
+            playsinline>
+        </video>
+
+    </div>
+
+</section>
+
+
+                <!-- MOMENTS -->
+
+                <section class="photo-text-showcase">
+
+                    <div class="section-heading">
+
+                        <span>THE LEGACY</span>
+
+                        <h2>
+                            ICONIC
+                            <strong>MOMENTS</strong>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="photo-text-row">
+
+                        <div class="pt-img">
+
+                            <img src="https://i.pinimg.com/1200x/e1/99/5d/e1995d6188f98c18f7254b97928dec54.jpg">
+
+                        </div>
+
+                        <div class="pt-text">
+
+                            
+
+                            <h4>
+                                THE CHAMPIONS LEAGUE MIRACLE
+                            </h4>
+
+                            <p>
+                                A journey from Egypt to the top of European
+                                football.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo-text-row reverse">
+
+                        <div class="pt-img">
+
+                            <img src="https://i.pinimg.com/1200x/72/ff/f1/72fff1c9bf7dec5e1e6418dfeb0a71a2.jpg">
+
+                        </div>
+
+                        <div class="pt-text">
+
+                            
+
+                            <h4>
+                                PREMIER LEAGUE RECORD BREAKER
+                            </h4>
+
+                            <p>
+                                One of the most dominant scoring seasons
+                                in Premier League history.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+<!-- SALAH RECORD BREAKER SECTION -->
+
+<section class="record-breaker-section">
+
+
+    <img
+        src="images/FB_IMG_1765551040547.jpg"
+        alt="Mohamed Salah"
+    >
+
+</section>
+
+<!-- MANCHESTER UNITED OWNER -->
+
+<section class="manchester-owner-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="manchester-owner-content">
+
+        <span>THE RED KING</span>
+
+        <h2>
+            MANCHESTER
+            <strong>UNITED OWNER</strong>
+        </h2>
+
+        <p>
+            Mohamed Salah has turned Old Trafford into his own playground.
+            Every time he steps onto the pitch, Manchester United knows
+            exactly who the real owner is.
+        </p>
+
+        <h3>
+            SALAH
+            <strong>OWNS MANCHESTER.</strong>
+        </h3>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="manchester-owner-image">
+
+        <img
+            src="images/manu owner.jpg"
+            alt="Mohamed Salah">
+
+    </div>
+
+</section>
+
+<!-- =========================
+     MOHAMED SALAH AWARDS
+========================== -->
+
+<section class="salah-awards-section">
+
+    <div class="section-heading">
+
+        <span>THE RECOGNITION</span>
+
+        <h2>
+            MOHAMED SALAH'S
+            <strong>AWARDS</strong>
+        </h2>
+
+    </div>
+
+
+    <!-- IMAGE + TEXT SIDE BY SIDE -->
+
+    <div class="awards-content">
+
+        <!-- IMAGE LEFT -->
+
+        <div class="awards-image">
+
+            <img
+                src="images/6477a4e0-13b4-42fe-9bd9-5b83fd229184.jfif"
+                alt="Mohamed Salah Awards">
+
+        </div>
+
+
+        <!-- TEXT RIGHT -->
+
+        <div class="awards-text">
+
+            <span class="awards-label">
+                A LEGACY BUILT ON HARD WORK
+            </span>
+
+            <h3>
+                THE REWARD OF
+                <strong>DEDICATION</strong>
+            </h3>
+
+            <p>
+                Every award Mohamed Salah has earned represents years
+                of hard work, sacrifice, discipline, and an endless desire
+                to become better.
+            </p>
+
+            <p>
+                From his early days in Egypt to becoming one of the
+                greatest players in world football, Salah never stopped
+                working for the moment when his efforts would finally be
+                recognized.
+            </p>
+
+            <p>
+                These awards are not just trophies. They are a reflection
+                of the journey, the challenges, and the dedication that
+                made Mohamed Salah the Egyptian King.
+            </p>
+
+            <div class="awards-highlight">
+
+                <strong>HARD WORK</strong>
+
+                <span>
+                    CREATED THE MOMENT
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     THE MERSEYSIDE KING
+========================== -->
+
+<section class="merseyside-king-section">
+
+    <!-- TEXT LEFT -->
+
+    <div class="merseyside-king-text">
+
+        <span>
+            THE MERSEYSIDE KING
+        </span>
+
+        <h2>
+            KING OF THE
+            <strong>DERBY.</strong>
+        </h2>
+
+        <p>
+            In the biggest battle on Merseyside, Mohamed Salah has
+            continued to prove why he is one of Liverpool's greatest
+            modern legends.
+        </p>
+
+        <p>
+            Against Everton, Salah has delivered goals, moments,
+            and unforgettable performances. Every derby carries
+            pressure, passion, and history — and Salah has always
+            stood tall when it mattered most.
+        </p>
+
+        <p>
+            For Liverpool supporters, he is more than a goalscorer.
+            He is the player who turns the biggest moments into
+            unforgettable memories.
+        </p>
+
+        <div class="merseyside-quote">
+
+            <strong>
+                ONE CITY.
+            </strong>
+
+            <span>
+                ONE KING.
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- IMAGE RIGHT -->
+
+    <div class="merseyside-king-image">
+
+        <img
+            src="images/mercyside.jpg"
+            alt="Mohamed Salah Merseyside Derby">
+
+    </div>
+
+</section>
+
+</section>
+
+                <!-- AUTO CLIPS -->
+
+<section class="auto-clips-section salah-clips">
+
+    <div class="section-heading">
+
+        <span>THE HIGHLIGHT REEL</span>
+
+        <h2>
+            SALAH
+            <strong>IN MOTION</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="auto-clips-grid">
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/clip 1.mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+               
+                <strong>THE KING IN ACTION</strong>
+            </div>
+
+        </div>
+
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/clip2.mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+                
+                <strong>THE CHAMPION</strong>
+            </div>
+
+        </div>
+
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/clip3.mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+                
+                <strong>THE FINISHER</strong>
+            </div>
+
+        </div>
+
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/clip4 (2).mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+                
+                <strong>THE EGYPTIAN KING</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+              
+                <!-- SOCIAL -->
+
+
+
+                <!-- FINAL CTA -->
+
+                <section class="final-cta salah-cta">
+
+                    <span>THE LEGACY NEVER ENDS</span>
+
+                    <h2>
+                        ONE KING.
+                        <strong>ONE KINGDOM.</strong>
+                    </h2>
+
+
+                    </button>
+
+                </section>
+
+            </main>
+
+        </div>
+
+
+
+      <!-- =========================
+     MESSI PAGE
+========================== -->
+
+<div id="messiLayout" class="player-layout hidden">
+
+    <main class="messi-custom-page">
+
+
+        <!-- =========================
+             MESSI HERO
+        ========================== -->
+
+        <section class="messi-hero-section">
+
+            <div class="messi-hero-content">
+
+                <span class="messi-badge">
+                    THE MAGICIAN
+                </span>
+
+                <h1>
+                    LIONEL
+                    <span>MESSI</span>
+                </h1>
+
+                
+                
+
+                </button>
+
+
+                <div class="messi-quick-stats">
+
+                    <div class="m-q-box">
+
+                        <strong id="messiGoals">
+                            838+
+                        </strong>
+
+                        <span>
+                            CAREER GOALS
+                        </span>
+
+                    </div>
+
+
+                    <div class="m-q-box">
+
+                        <strong id="messiTrophies">
+                            44
+                        </strong>
+
+                        <span>
+                            TROPHIES
+                        </span>
+
+                    </div>
+
+
+                    <div class="m-q-box">
+
+                        <strong id="messiBallon">
+                            8×
+                        </strong>
+
+                        <span>
+                            BALLON D'OR
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="messi-hero-avatar">
+
+                <div class="messi-number">
+                    10
+                </div>
+
+
+                <!-- غيّر الصورة من هنا براحتك -->
+
+                <img id="messiHeroImg"
+                    src="https://i.pinimg.com/1200x/41/07/4b/41074b049b6bc36c1ce0c216bab8e88c.jpg"
+                    alt="Lionel Messi">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CAREER HONORS
+        ========================== -->
+
+        <section id="messiJourney"
+            class="messi-honors-section">
+
+
+            <div class="messi-sec-title">
+
+                <span>
+                    THE MAGICIAN'S CABINET
+                </span>
+
+                <h2>
+                    CAREER
+                    <strong>
+                        HONORS
+                    </strong>
+                </h2>
+
+            </div>
+
+
+            <div class="messi-honors-grid">
+
+
+                <div class="honor-card">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <h3>
+                        8× BALLON D'OR
+                    </h3>
+
+                    <p>
+                        Football's most prestigious
+                        individual award.
+                    </p>
+
+                </div>
+
+
+                <div class="honor-card">
+
+                    <i class="fa-solid fa-earth-americas"></i>
+
+                    <h3>
+                        WORLD CUP CHAMPION
+                    </h3>
+
+                    <p>
+                        The ultimate dream fulfilled in 2022.
+                    </p>
+
+                </div>
+
+
+                <div class="honor-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>
+                        EUROPEAN GOLDEN SHOE
+                    </h3>
+
+                    <p>
+                        One of the greatest goalscorers ever.
+                    </p>
+
+                </div>
+
+
+                <div class="honor-card">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <h3>
+                        BARCELONA LEGEND
+                    </h3>
+
+                    <p>
+                        An era of unbelievable dominance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUOTE
+        ========================== -->
+
+        <section class="messi-quote">
+
+            <span>
+                THE PHILOSOPHY
+            </span>
+
+            <h2>
+                “You have to fight to reach
+                <strong>
+                    your dream.
+                </strong>”
+            </h2>
+
+        </section>
+
+
+
+        <!-- =========================
+             PHOTO GALLERY
+        ========================== -->
+
+        <section class="messi-photo-showcase">
+
+
+            <div class="messi-sec-title">
+
+                <span>
+                    PHOTO GALLERY & LEGACY
+                </span>
+
+                <h2>
+                    THE ARTIST
+                    <strong>
+                        AT WORK
+                    </strong>
+                </h2>
+
+            </div>
+
+
+            <!-- الصورة رقم 1 -->
+
+            <div class="photo-text-row">
+
+
+                <div class="pt-img messi-border">
+
+                    <!-- غيّر الصورة من هنا -->
+
+                    <img src="https://i.pinimg.com/736x/b1/87/a2/b187a24823673a8c1bd742b45a2ad9a9.jpg"
+                        alt="Messi World Cup Glory">
+
+                </div>
+
+
+                <div class="pt-text">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h4>
+                        WORLD CUP GLORY
+                    </h4>
+
+                    <p>
+                        The final chapter of an incredible
+                        international story.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة رقم 2 -->
+
+            <div class="photo-text-row reverse">
+
+
+                <div class="pt-img messi-border">
+
+                    <!-- غيّر الصورة من هنا -->
+
+                    <img src="https://i.pinimg.com/736x/27/3d/a6/273da6a1c6a742e123dd016f9ad47f0d.jpg"
+                        alt="Messi Barcelona Era">
+
+                </div>
+
+
+                <div class="pt-text">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h4>
+                        THE BARCELONA ERA
+                    </h4>
+
+                    <p>
+                        A footballing era built on imagination,
+                        technique and genius.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MESSI BARCELONA LEGEND -->
+
+<section class="messi-barcelona-legend">
+
+    <!-- IMAGE LEFT -->
+
+    <div class="barcelona-legend-image">
+
+        <img
+            src="https://i.pinimg.com/1200x/ec/25/1d/ec251dd6f056bbb98ce9de7ce5d6de78.jpg"
+            alt="Lionel Messi Barcelona Legend">
+
+    </div>
+
+
+    <!-- TEXT RIGHT -->
+
+    <div class="barcelona-legend-text">
+
+        <span>
+            THE BARCELONA LEGEND
+        </span>
+
+        <h2>
+            MORE THAN
+            <strong>A PLAYER.</strong>
+        </h2>
+
+        <p>
+            Lionel Messi is not just a legend of Barcelona.
+            He is the symbol of an entire era.
+        </p>
+
+        <p>
+            From the moment he stepped onto the pitch at Camp Nou,
+            Messi transformed football with his magical dribbling,
+            impossible goals, and unforgettable moments.
+        </p>
+
+        <p>
+            He became the heart of Barcelona and created a legacy
+            that will live forever in the history of the club.
+        </p>
+
+        <div class="barcelona-quote">
+
+            <strong>
+                ONE CLUB.
+            </strong>
+
+            <span>
+                ONE LEGEND.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =========================
+             MESSI AUTO CLIPS
+        ========================== -->
+
+        <section class="auto-clips-section messi-clips">
+
+
+            <div class="messi-sec-title">
+
+                <span>
+                    THE MAGIC IN MOTION
+                </span>
+
+                <h2>
+                    MESSI
+                    <strong>
+                        HIGHLIGHTS
+                    </strong>
+                </h2>
+
+            </div>
+
+
+            <div class="auto-clips-grid">
+
+
+                <div class="auto-clip-card">
+
+                    <video
+                        src="videos/messi1.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline>
+                    </video>
+
+
+                    <div class="clip-label">
+
+                       
+
+                        <strong>
+                            THE MAGICIAN
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="auto-clip-card">
+
+                    <video
+                        src="videos/messi2.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline>
+                    </video>
+
+
+                    <div class="clip-label">
+
+                      
+
+                        <strong>
+                            PURE SKILL
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+       
+
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+
+        <section class="final-cta messi-cta">
+
+            <span>
+                THE MAGIC NEVER ENDS
+            </span>
+
+            <h2>
+                PURE
+                <strong>
+                    FOOTBALL ART.
+                </strong>
+            </h2>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+        <!-- =========================
+             RONALDO PAGE
+        ========================== -->
+
+        <div id="ronaldoLayout" class="player-layout hidden">
+
+            <main class="ronaldo-custom-page">
+
+                <section class="ronaldo-banner">
+
+                    <div class="ronaldo-bg-number">
+                        7
+                    </div>
+
+                    <div class="ronaldo-banner-text">
+
+                        <span class="ronaldo-badge">
+                            THE ULTIMATE MACHINE
+                        </span>
+
+                        <h1>
+                            CRISTIANO
+                            <span>RONALDO</span>
+                        </h1>
+
+                        <p>
+                            Talent may start the journey.
+                            Discipline finishes it.
+                        </p>
+
+                        <button class="main-action-btn ronaldo-btn"
+                            onclick="scrollToSection('ronaldoJourney')">
+
+                            ENTER THE LEGACY
+
+                            <i class="fa-solid fa-arrow-down"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="ronaldo-banner-img">
+
+                        <img id="ronaldoHeroImg"
+                            src="https://i.pinimg.com/1200x/87/28/fc/8728fcf5b451c2fc1bc0cd8091150903.jpg">
+
+                    </div>
+
+                </section>
+
+
+                <section class="ronaldo-stats-strip">
+
+                    <div class="r-box">
+                        OFFICIAL GOALS
+                        <strong id="ronaldoGoals">900+</strong>
+                    </div>
+
+                    <div class="r-box">
+                        TROPHIES WON
+                        <strong id="ronaldoTrophies">35</strong>
+                    </div>
+
+                    <div class="r-box">
+                        BALLON D'OR
+                        <strong id="ronaldoBallon">5×</strong>
+                    </div>
+
+                </section>
+
+
+                <section id="ronaldoJourney"
+                    class="ronaldo-milestones">
+
+                    <h2>
+                        CAREER
+                        <span>MILESTONES</span>
+                    </h2>
+
+                    <div class="r-grid">
+
+                        <div class="r-card">
+
+                            <span>01</span>
+
+                            <h3>
+                                SPORTING CP
+                            </h3>
+
+                            <p>
+                                Where the dream began.
+                            </p>
+
+                        </div>
+
+                        <div class="r-card">
+
+                            <span>02</span>
+
+                            <h3>
+                                MANCHESTER UNITED
+                            </h3>
+
+                            <p>
+                                The rise of a global superstar.
+                            </p>
+
+                        </div>
+
+                        <div class="r-card">
+
+                            <span>03</span>
+
+                            <h3>
+                                REAL MADRID
+                            </h3>
+
+                            <p>
+                                The greatest goalscoring era.
+                            </p>
+
+                        </div>
+
+                        <div class="r-card">
+
+                            <span>04</span>
+
+                            <h3>
+                                PORTUGAL
+                            </h3>
+
+                            <p>
+                                European champion and national icon.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="ronaldo-mindset">
+
+                    <span>THE MINDSET</span>
+
+                    <h2>
+                        TALENT IS NOTHING
+                        WITHOUT
+                        <strong>DISCIPLINE.</strong>
+                    </h2>
+
+                    <div class="mindset-grid">
+
+                        <div>
+                            <strong>99%</strong>
+                            <span>WORK ETHIC</span>
+                        </div>
+
+                        <div>
+                            <strong>98%</strong>
+                            <span>MENTALITY</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>DISCIPLINE</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- RONALDO REAL MADRID LEGEND -->
+
+<section class="ronaldo-madrid-legend">
+
+    <!-- IMAGE LEFT -->
+
+    <div class="madrid-legend-image">
+
+        <img
+            src="https://i.pinimg.com/1200x/05/29/d3/0529d392c70994e2b9f6954e39180883.jpg"
+            alt="Cristiano Ronaldo Real Madrid Legend">
+
+    </div>
+
+
+    <!-- TEXT RIGHT -->
+
+    <div class="madrid-legend-text">
+
+        <span>
+            THE REAL MADRID LEGEND
+        </span>
+
+        <h2>
+            MORE THAN
+            <strong>A GOALSCORER.</strong>
+        </h2>
+
+        <p>
+            Cristiano Ronaldo was not just a player at Real Madrid.
+            He became the face of an era and one of the greatest legends
+            in the history of the club.
+        </p>
+
+        <p>
+            From the moment he arrived at the Santiago Bernabéu,
+            Ronaldo transformed impossible moments into reality.
+            Goals, records, Champions League nights and unforgettable
+            performances became part of his legacy.
+        </p>
+
+        <p>
+            He left Real Madrid as the club's all-time leading goalscorer
+            and as a symbol of ambition, mentality and greatness.
+        </p>
+
+        <div class="madrid-quote">
+
+            <strong>
+                ONE CLUB.
+            </strong>
+
+            <span>
+                ONE MACHINE.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+                <section class="ronaldo-photo-showcase">
+
+                    <h2 class="r-sec-title">
+                        GALLERY &
+                        <span>DOMINANCE</span>
+                    </h2>
+
+                    <div class="photo-text-row">
+
+                        <div class="pt-img ronaldo-border">
+
+                            <img src="https://i.pinimg.com/1200x/91/2e/2d/912e2d4235a455fd545a519390efa3f4.jpg">
+
+                        </div>
+
+                        <div class="pt-text">
+
+                            
+
+                            <h4>
+                                THE BICYCLE KICK
+                            </h4>
+
+                            <p>
+                                One of football's most iconic moments.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="photo-text-row reverse">
+
+                        <div class="pt-img ronaldo-border">
+
+                            <img src="https://i.pinimg.com/736x/b9/80/38/b98038462f7c1808133ad1b1e4fb72cf.jpg">
+
+                        </div>
+
+                        <div class="pt-text">
+
+                            
+
+                            <h4>
+                                EUROPEAN CHAMPION
+                            </h4>
+
+                            <p>
+                                Leading Portugal to international glory.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- RONALDO AUTO CLIPS -->
+
+<section class="auto-clips-section ronaldo-clips">
+
+    <h2 class="r-sec-title">
+
+        RONALDO
+        <span>IN MOTION</span>
+
+    </h2>
+
+
+    <div class="auto-clips-grid">
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/cris1.mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+                
+                <strong>THE MACHINE</strong>
+            </div>
+
+        </div>
+
+
+        <div class="auto-clip-card">
+
+            <video
+                src="videos/cris2.mp4"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <div class="clip-label">
+                
+                <strong>THE POWER</strong>
+            </div>
+
+        </div>
+
+
+       
+</section>
+
+
+
+               
+
+
+                <section class="final-cta ronaldo-cta">
+
+                    <span>THE LEGACY NEVER ENDS</span>
+
+                    <h2>
+                        BECOME
+                        <strong>UNSTOPPABLE.</strong>
+                    </h2>
+
+                   
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+        <!-- YOUR WEBSITE CONTENT -->
+
+
+    <!-- SALAH SONG -->
+    <audio id="salahSong" loop>
+        <source src="audio/mosalah song project.m4a" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+</body>
+
+</html>
